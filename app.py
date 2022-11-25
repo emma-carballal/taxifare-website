@@ -31,3 +31,13 @@ r = requests.get(url = url, params = params).json()
 prediction = r['fare']
 
 st.header(f'Your fare will be around ${round(prediction, 2)}')
+
+st.map()
+# def get_map_data():
+
+#     return pd.DataFrame(
+#             np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+#             columns=['lat', 'lon']
+#         )
+
+# df = get_map_data()
